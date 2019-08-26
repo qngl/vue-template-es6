@@ -1,4 +1,4 @@
-# vue-template-es5
+# vue-template-es6
 
 ## Project setup
 ```
@@ -7,7 +7,7 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm start
 ```
 
 ### Compiles and minifies for production
@@ -28,6 +28,11 @@ npm run lint
 ### Run your unit tests
 ```
 npm run test:unit
+```
+
+### Run your dist
+```
+npm run serve:dist
 ```
 
 ### Customize configuration

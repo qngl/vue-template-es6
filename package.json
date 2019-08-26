@@ -1,17 +1,22 @@
 {
-  "name": "vue-template-es5",
+  "name": "vue-template-es6",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "lint": "vue-cli-service lint --fix",
+    "serve:dist": "http-server ./dist -p 8088 -c-1 --proxy http://10.42.67.4:8080 --cors",
+    "start": "vue-cli-service serve",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "agentkeepalive": "^4.0.2",
+    "axios": "^0.19.0",
     "core-js": "^2.6.5",
+    "js-cookie": "^2.2.1",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
+    "vuetify": "^2.0.0",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
@@ -27,18 +32,22 @@
     "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-vue": "^5.0.0",
+    "http-server": "^0.11.1",
     "lint-staged": "^8.1.5",
     "prettier": "^1.18.2",
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.6.10"
+    "spy-debugger": "^3.8.1",
+    "vue-cli-plugin-vuetify": "^0.6.3",
+    "vue-template-compiler": "^2.6.10",
+    "vuetify-loader": "^1.2.2"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "*.{js,vue}": [
-      "vue-cli-service lint",
+      "vue-cli-service lint --fix",
       "git add"
     ]
   }
