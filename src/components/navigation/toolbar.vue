@@ -25,7 +25,7 @@
 <script>
 import _ from 'lodash';
 import { mapGetters } from 'vuex';
-import logo from '@/assets/images/logo.svg';
+import logo from '@/assets/logo.svg';
 import logoBentley from '@/assets/images/logo-bentley.png';
 import backButton from './backButton';
 import cdnImage from '@/components/sizedImage/cdnImage';

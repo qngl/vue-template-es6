@@ -4,7 +4,7 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import toolbar from '../toolbar.vue';
 
-jest.mock('@/assets/images/logo.svg', () => 'data:image');
+jest.mock('@/assets/logo.svg', () => 'data:image');
 
 const localVue = createLocalVue();
 const $route = { name: 'dealerList' };

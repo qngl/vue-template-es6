@@ -13,7 +13,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style>
 .app-version {
   opacity: 0.8;
   color: #42b983;

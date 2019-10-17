@@ -14,7 +14,7 @@ jest.mock('@/utils/auth', () => {
 });
 jest.mock('../sideMenuItem', () => jest.fn());
 jest.mock('../logoutConfirmDialog', () => jest.fn());
-jest.mock('@/assets/images/logo.svg', () => jest.fn());
+jest.mock('@/assets/logo.svg', () => jest.fn());
 
 const localVue = createLocalVue();
 const $store = {

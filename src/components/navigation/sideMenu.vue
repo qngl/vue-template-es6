@@ -33,7 +33,7 @@ import { mapGetters } from 'vuex';
 import { isLoginUser } from '@/utils/auth';
 import sideMenuItem from './sideMenuItem';
 import logoutConfirmDialog from './logoutConfirmDialog';
-import logo from '@/assets/images/logo.svg';
+import logo from '@/assets/logo.svg';
 
 const MAX_IDLE_TIME = 1000 * 60 * 60;
 const REFRESH_PERIOD = 1000 * 60 * 10;
