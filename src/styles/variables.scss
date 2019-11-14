@@ -1,0 +1,15 @@
+// Any changes to a default variable must be
+// declared above the initial style import
+$bg-color: #f0f0f0;
+$border-color: #eee;
+$primary: #4e1b84;
+$secondary: rgba(0, 0, 0, 0.87);
+$disabled: #757575;
+$highlight: #1867c0;
+$error: #ff5252;
+
+$font-size-root: 16px;
+
+// Required for modifying core defaults
+@import '~vuetify/src/styles/styles.sass';
+
